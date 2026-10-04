@@ -77,6 +77,6 @@ def scrape(args: new_search):
         r = requests.get(url=f"{host}{channel}", headers=headers)
 
     if r.status_code == 200:
-        return [True, r.json]
+        return [True, r.json()]
 
     return [False, None]
